@@ -1,0 +1,291 @@
+<html>
+ <head>
+  <title>
+   Order Status
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 16px;
+            margin: 16px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .header i {
+            font-size: 24px;
+            margin-right: 8px;
+        }
+        .header h1 {
+            font-size: 20px;
+            margin: 0;
+        }
+        .header p {
+            font-size: 14px;
+            color: #888;
+            margin: 0;
+        }
+        .status-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 16px 0;
+        }
+        .status-bar div {
+            text-align: center;
+            flex: 1;
+        }
+        .status-bar div.active {
+            color: #00c853;
+        }
+        .status-bar div i {
+            font-size: 24px;
+            margin-bottom: 4px;
+        }
+        .address {
+            display: flex;
+            align-items: center;
+            margin: 16px 0;
+        }
+        .address i {
+            font-size: 20px;
+            margin-right: 8px;
+        }
+        .address p {
+            margin: 0;
+            font-size: 14px;
+        }
+        .product {
+            display: flex;
+            align-items: center;
+            margin: 16px 0;
+        }
+        .product img {
+            width: 201px;
+            height: 201px;
+            border-radius: 100px;
+            margin-right: 16px;
+        }
+        .product-details {
+            flex: 20;
+        }
+        .product-details h2 {
+            font-size: 16px;
+            margin: 0;
+        }
+        .product-details p {
+            font-size: 14px;
+            color: #888;
+            margin: 4px 0;
+        }
+        .product-details .tags {
+            display: flex;
+            align-items: center;
+            margin: 4px 0;
+        }
+        .product-details .tags span {
+            background-color: #f0f0f0;
+            border-radius: 4px;
+            padding: 2px 4px;
+            font-size: 12px;
+            margin-right: 4px;
+        }
+        .product-details .price {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .contact {
+            display: flex;
+            align-items: center;
+            margin: 16px 0;
+        }
+        .contact i {
+            font-size: 20px;
+            margin-right: 8px;
+        }
+        .contact p {
+            margin: 0;
+            font-size: 14px;
+        }
+        .summary, .details {
+            margin: 16px 0;
+        }
+        .summary h3, .details h3 {
+            font-size: 16px;
+            margin: 0 0 8px 0;
+        }
+        .summary p, .details p {
+            font-size: 14px;
+            margin: 4px 0;
+        }
+        .button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background-color: #38ff8b;
+            color: #000000;
+            text-align: center;
+            border: none;
+            border-radius: 99px;
+            font-size: 16px;
+            margin: 16px 0;
+            cursor: pointer;
+            text-decoration: none;
+            align-self: flex-end;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <div class="header">
+    </i>
+    <div>
+     <h1>
+      pesanan anda
+     </h1>
+     <p>
+      Estimasi tiba: kalau kurir panjang umur 
+     </p>
+    </div>
+   </div>
+   <div class="status-bar">
+    <div class="active">
+     <i class="fas fa-box">
+     </i>
+     <p>
+      Pesanan dibuat
+     </p>
+    </div>
+    <div class="active">
+     <i class="fas fa-truck">
+     </i>
+     <p>
+      sabar 
+     </p>
+    </div>
+    <div>
+     <i class="fas fa-shipping-fast">
+     </i>
+     <p>
+      Sedang balapan
+     </p>
+    </div>
+    <div>
+     <i class="fas fa-home">
+     </i>
+     <p>
+      Pesanan dah di depan
+     </p>
+    </div>
+   </div>
+   <div class="address">
+    <i class="fas fa-map-marker-alt">
+    </i>
+    <p>
+     haekal (+62)08139969***3
+     <br/>
+     pemata hijau permai . blok F 12 NO 8
+     <br/>
+     jl.kalimaya RT 007/ RW 018 KALI ABANG TENGAH Bekasi Utara
+    </p>
+   </div>
+   <div class="product">
+    <img alt="img/carausel/product/12-PRO-blue.jpg" height="124" src="img/carausel/product/12-PRO-blue.jpg" width="124"/>
+    <div class="product-details">
+     <h2>
+        Iphone12
+     </h2>
+     <p>
+      (Gratis ongkir) Beli 1 Dapat 4 pukulan pak fincen
+     </p>
+     <p>
+        Iphone12
+     </p>
+     <div class="tags">
+      <span>
+       Pengembalian Barang Gratis
+      </span>
+      <span>
+       Garansi platform
+      </span>
+     </div>
+     <p class="price">
+      Rp15,999.0000 x1
+     </p>
+    </div>
+   </div>
+   <div class="contact">
+    <i class="fas fa-comments">
+    </i>
+    <p>
+     Hubungi penjual
+     <br/>
+     Produk, masalah sebelum pengiriman, dan pertanyaan lain.
+    </p>
+   </div>
+   <div class="contact">
+    <i class="fas fa-question-circle">
+    </i>
+    <p>
+     Hubungi support team kami
+     <br/>
+     Akun, pembayaran, sengketa, dan masalah pascapengiriman.
+    </p>
+   </div>
+   <div class="summary">
+    <h3>
+     Ringkasan Pesanan
+    </h3>
+    <p>
+     Subtotal: Rp15,999.000
+    </p>
+    <p>
+     Biaya Layanan Pembeli: 
+    </p>
+    <p>
+     Pengiriman: 
+    </p>
+    <p>
+     Voucher untuk pengiriman oleh Platform: - 
+    </p>
+    <p>
+     Total: Rp15,999.000
+    </p>
+   </div>
+   <div class="details">
+    <h3>
+     Perincian pesanan
+    </h3>
+    <p>
+     Nomor pesanan: 577260846671431630
+    </p>
+    <p>
+     Tanggal pemesanan: 
+    </p>
+    <p>
+     Metode pembayaran:
+     <img alt="DANA logo" height="25" src="img/dana.jpg" width="50"/>
+    </p>
+    <p>
+     Waktu pembayaran: 
+    </p>
+    <p>
+     Tanggal pembayaran: 
+    </p>
+   </div>
+   <a href="toko.php" class="button">kembali ke halaman utama</a> 
+  </div>
+ </body>
+</html>

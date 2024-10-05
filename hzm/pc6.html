@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Product</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Memastikan tinggi 100% dari viewport */
+            background-color: #000000; /* Warna latar belakang */
+        }
+        .product-card {
+            border: 2px solid #ccc;
+            border-radius: 20px;
+            padding: 150px;
+            width: 600px; /* Lebar kartu produk */
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            background-color: rgb(252, 252, 252); /* Warna latar belakang kartu */
+        }
+        .product-card img {
+            max-width: 150px; /* Ukuran gambar */
+            border-radius: 10px;
+            margin-right: 15px; /* Jarak antara gambar dan teks */
+        }
+        .product-info {
+            flex: 1; /* Membuat bagian teks fleksibel */
+            display: flex;
+            flex-direction: column; /* Mengatur teks dalam kolom */
+            justify-content: space-between; /* Mengatur jarak antar elemen */
+        }
+        .button {
+            display: inline-block;
+            padding: 10px;
+            font-size: 14px;
+            color: white;
+            background-color:#39c98d;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;  
+            cursor: pointer;
+            margin-top: 10px;
+            align-self: flex-end; /* Menempatkan tombol di kanan */
+        }
+        .button:hover {
+            background-color: #00b306;
+        }
+        .back-button {
+            background-color: #39c98d; /* Warna untuk tombol kembali */
+            margin-top: 5px;
+        }
+        .back-button:hover {
+            background-color: #00b306; /* Warna saat hover tombol kembali */
+        }
+        .quantity-controls {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            justify-content: left;
+        }
+        .quantity-controls button {
+            padding: 2px 10px;
+            margin:  2px;
+            cursor: pointer;
+        }
+        .stock-info {
+            text-align: left; /* Meratakan teks ke kiri */
+            margin-top: 20px;
+            font-size: 13px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="product-card">
+    <img src="img/productLaptop/Laptop-axio-gaming.jpg" alt="Nama Barang">
+    <div class="product-info">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+            <h3> Laptop Gaming Axioo Pongo</h3>
+            <div>
+                <a href="pesananpc6.html" class="button">Beli Sekarang</a>
+                <a href="Laptop.html" class="button back-button">Kembali</a>
+            </div>
+        </div>
+        <p>Processor: Intel® Core™ i7-12650H (10 Cores,16 Threads, TDP: 45W)
+
+            Chipset: Intel® Alder Lake
+            
+            Graphics Controller: Intel® Graphics
+            
+            Graphics: RTX4060 8GB DDR6 (100w) Hybrid
+            
+            
+            Screen: 15.6" FHD IPS 144Hz SRGB 100%
+            
+            Memory: 16GB SODIMM (2 x SODIMM DDR4 Dual Channel memory up to 64GB,Frequency up to 3200MHz) (Real operation frequency depends on processor)
+            
+            Storage: 512GB M.2 2280 SSD
+            
+             </p>
+        <p> Harga: Rp15.999.000</p>
+        <div class="stock-info">
+            Stok: <span id="stock-1">100</span><br>
+            Terjual: <span id="sold-1">98</span><br>
+            Rating: <span id="rating-1">9.5 ⭐</span>
+        </div>
+        <div class="quantity-controls">
+            <button onclick="decreaseQuantity(1)">-</button>
+            <input type="number" id="quantity-1" value="1" min="1" style="width: 40px; text-align: center;">
+            <button onclick="increaseQuantity(1)">+</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    function increaseQuantity(id) {
+        let quantityInput = document.getElementById('quantity-' + id);
+        quantityInput.value = parseInt(quantityInput.value) + 1;
+    }
+
+    function decreaseQuantity(id) {
+        let quantityInput = document.getElementById('quantity-' + id);
+        if (quantityInput.value > 1) {
+            quantityInput.value = parseInt(quantityInput.value) - 1;
+        }
+    }
+</script>
+
+</body>
+</html>
