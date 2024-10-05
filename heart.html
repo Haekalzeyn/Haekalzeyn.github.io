@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pink heart.css" />
+    <title>Hati Terimakasih</title>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden; /* Mencegah scrollbar */
+      }
+      #message {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) translateY(100px); /* Mulai dari bawah */
+        color: white; /* Warna teks */
+        font-size: 40px; /* Ukuran teks */
+        text-align: absolute; /* Pusatkan teks */
+        z-index: 10; /* Pastikan teks berada di atas canvas */
+        opacity: 0; /* Mulai dengan transparan */
+        animation: slideIn 1s forwards; /* Panggil animasi */
+      }
+
+      @keyframes slideIn {
+        0% {
+          transform: translate(-50%, -50%) translateY(100px);
+          opacity: 0;
+        }
+        100% {
+          transform: translate(-50%, -50%);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="pinkboard"></canvas>
+    <div id="message">Terimakasih</div>
+    <script src="pink heart.js"></script>
+  </body>
+</html>
